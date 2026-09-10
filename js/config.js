@@ -3,7 +3,7 @@
    paste it into the setup screen (it's remembered in the browser).
    ===================================================================== */
 export const CONFIG = {
-  MASTER_CSV_URL: "https://docs.google.com/spreadsheets/d/1kV3jReMwlLnxScfzBDILqpu4OUrSZuR3fb3ZK4Z3FhE/gviz/tq?tqx=out:csv",
+  MASTER_CSV_URL: "https://docs.google.com/spreadsheets/d/e/2PACX-1vSOETLNqTFtQG5lQo7N275PCVS8R8m6ihg9rtgZkIZ2h56XJHDGYCcoSGo_zrM_7JzJR5LXhkNlJsct/pub?output=csv",
   POLL_MS: 30000,        // how often an open map re-reads its sheet
   INITIAL_DEPTH: 2,      // levels shown when a map first opens
   BIG_MAP: 400,          // above this many topics, animations are skipped
