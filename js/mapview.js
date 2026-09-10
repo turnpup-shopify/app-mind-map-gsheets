@@ -250,10 +250,8 @@ function placeText(sel) {
   sel
     .attr("dy", L === "down" ? "0" : "0.32em")
     .attr("transform", d => {
-      if (L !== "radial") return null;
-      if (d.depth === 0) return "translate(0,-22)";
-      const rot = (d.a < Math.PI ? d.a - Math.PI / 2 : d.a + Math.PI / 2) * 180 / Math.PI;
-      return `rotate(${rot})`;
+      if (L === "radial" && d.depth === 0) return "translate(0,-22)";
+      return null;
     })
     .attr("x", d => {
       if (L === "radial") return d.depth === 0 ? 0 : (d.a < Math.PI ? 12 : -12);
